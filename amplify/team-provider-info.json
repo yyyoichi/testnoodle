@@ -1,15 +1,23 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-testnoodle-dev-155509-authRole",
-      "UnauthRoleArn": "arn:aws:iam::148032264481:role/amplify-testnoodle-dev-155509-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::148032264481:role/amplify-testnoodle-dev-155509-authRole",
-      "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-testnoodle-dev-155509-deployment",
-      "UnauthRoleName": "amplify-testnoodle-dev-155509-unauthRole",
-      "StackName": "amplify-testnoodle-dev-155509",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:148032264481:stack/amplify-testnoodle-dev-155509/c92ba840-5caa-11ec-87f3-0ef9dd3c3401",
-      "AmplifyAppId": "d2vacesrcor2ao"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-testnoodle-dev-155509-authRole",
+            "UnauthRoleArn": "arn:aws:iam::148032264481:role/amplify-testnoodle-dev-155509-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::148032264481:role/amplify-testnoodle-dev-155509-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-testnoodle-dev-155509-deployment",
+            "UnauthRoleName": "amplify-testnoodle-dev-155509-unauthRole",
+            "StackName": "amplify-testnoodle-dev-155509",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:148032264481:stack/amplify-testnoodle-dev-155509/c92ba840-5caa-11ec-87f3-0ef9dd3c3401",
+            "AmplifyAppId": "d2vacesrcor2ao"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2vacesrcor2ao",
+                    "type": "cicd"
+                }
+            }
+        }
     }
-  }
 }
