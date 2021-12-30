@@ -1,0 +1,12 @@
+.box {
+  background-color: #EEEBDD;
+  height: 30px;
+  width: 100%;
+}
+.title {
+  margin: 5px auto;
+  width: 75%;
+  color: #000000;
+  padding-bottom: 4px;
+  border-bottom: solid #000000;
+}
