@@ -1,0 +1,23 @@
+.title-container{
+    width: 475px;
+    height: 291px;
+    left: 191px;
+    top: 205px;
+}
+.analysis-container{
+    width: 475px;
+    height: 291px;
+    left: 775px;
+    top: 205px;
+}
+.other-classes{
+    display: flex;
+    justify-content: center;
+}
+
+.other-classe{
+    width: 355px;
+    height: 291px;
+    left: 152px;
+    top: 947px;
+}
