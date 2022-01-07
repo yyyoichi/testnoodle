@@ -1,6 +1,7 @@
 //@ts-check
 import Head from 'next/head'
 import styles from "../../styles/Home.module.css"
+import show from "../../styles/show.module.css"
 
 export default function Subject(props) {
   return (
