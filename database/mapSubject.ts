@@ -17,6 +17,7 @@ export interface Subject {
       tags: number[]
     }
   },
+  star: number[],
   keywords: Array<String>
 }
 
@@ -50,6 +51,7 @@ const mapSubject = (data: any): Subject => {
         sum: tagSumScore,//tagの強さ合計(tagsの合計値ではない)
       }
     },
+    star: data["st"],
     keywords: data["kw"]///とりあえず使うことはない
   }
   return subject
