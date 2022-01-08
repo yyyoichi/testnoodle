@@ -13,7 +13,7 @@ export interface Subject {
   tag: {
     tags: string[]
     score: {
-      sum: number,
+      other: number,
       tags: number[]
     }
   },
@@ -27,7 +27,7 @@ export interface Subject {
  * @returns Subject 成型したデータ
  */
 const mapSubject = (data: any): Subject => {
-  const tagSumScore = data["ks"]["s"]
+  const othertagScore = data["ks"]["o"]
   const tagScore: number[] = data["ks"]["d"]
   const tagLength = tagScore.length
   const tags: string[] = data["kw"].splice(0, tagLength)
@@ -48,7 +48,7 @@ const mapSubject = (data: any): Subject => {
       tags: tags,//配列["tagname1", "tagname2"…]//要素数は1~5コ
       score: {
         tags: tagScore,//上のtagsに対応する数の要素数。tagの強さ
-        sum: tagSumScore,//tagの強さ合計(tagsの合計値ではない)
+        other: othertagScore,//tagの強さ合計(tagsの合計値ではない)
       }
     },
     star: data["st"],
