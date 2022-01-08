@@ -48,7 +48,7 @@ const mapSubject = (data: any): Subject => {
       tags: tags,//配列["tagname1", "tagname2"…]//要素数は1~5コ
       score: {
         tags: tagScore,//上のtagsに対応する数の要素数。tagの強さ
-        other: othertagScore,//tagの強さ合計(tagsの合計値ではない)
+        other: othertagScore,//上以外のtagの強さ合計(その他)
       }
     },
     star: data["st"],
