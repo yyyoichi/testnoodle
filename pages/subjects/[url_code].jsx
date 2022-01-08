@@ -17,7 +17,7 @@ export default function Subject(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className='title-container'>
+        <div className={show['title-container']}>
           <h1>{subject["name"]}</h1>
           <h3>{subject["professor"]}</h3>
           <h3>{subject["semester"]}</h3>
