@@ -1,9 +1,21 @@
+.containers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
 .title-container{
     width: 475px;
     height: 291px;
+    left: 191px;
+    top: 205px;
+    background-color: rgba(238, 235, 221, 1);
+    padding: 5px;
 }
 
-.title-container h1{
+.title-container h1,
+.title-container h3{
     color: rgba(129, 0, 0, 1);
 }
 
@@ -12,15 +24,38 @@
     height: 291px;
     left: 775px;
     top: 205px;
+    background-color: #ffffff;
+    margin: 10px;
 }
+
+.learning-title,
+.lecture-title,
+.syllabus-title,
+.other-class-title{
+    color: #ffffff;
+    background-color: #333232;
+    padding: 20px;
+}
+
+.learning-contents,
+.lecture-contents,
+.syllabus-contents,
+.other-class-contents{
+    margin: 20px;
+}
+
+
 .other-classes{
     display: flex;
     justify-content: center;
 }
 
-.other-classe{
+.other-class{
     width: 355px;
     height: 291px;
     left: 152px;
     top: 947px;
+    background-color: #ffffff;
+    margin: 10px;
+
 }
