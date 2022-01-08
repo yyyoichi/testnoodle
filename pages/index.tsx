@@ -23,6 +23,9 @@ export default function Home() {
         <Link href={'/ssr'}>
           <a>ssr動作確認ページへ</a>
         </Link>
+        <Link href={'/subjects/9S120300290120219S120300299S'}>
+          <a>講義詳細ページへ</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
