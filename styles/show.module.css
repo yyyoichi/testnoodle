@@ -1,9 +1,12 @@
 .title-container{
     width: 475px;
     height: 291px;
-    left: 191px;
-    top: 205px;
 }
+
+.title-container h1{
+    color: rgba(129, 0, 0, 1);
+}
+
 .analysis-container{
     width: 475px;
     height: 291px;
