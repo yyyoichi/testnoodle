@@ -32,12 +32,8 @@ export default function Subject(props) {
         <div className='analysis-container'>
           <div className='syllabus'>
             <p>{subject["grade"]}</p>
-            <a href="https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey = {subject['url_code']}" target="_blank" >https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey = {subject["url_code"]}</a>
-            <div>
-            <a href={"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" +subject['url_code'] } target="_blank" >{"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" +subject['url_code'] +" <=こんな感じ"}</a>
+            <a href={"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" +subject['url_code'] } target="_blank" >{"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" +subject['url_code'] }</a>
             <br/>
-            <a href={syllabusUrl} target="_blank" >{syllabusUrl +" <=これも同じ"}</a>
-            </div>
           </div>
         </div>
         <div className='other-classes'>
