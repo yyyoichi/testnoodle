@@ -3,10 +3,12 @@
   height: 30px;
   width: 100%;
 }
-.title {
+.title h1{
   margin: 5px auto;
-  width: 75%;
+  width: 100%;
   color: #000000;
+  margin-top: 10px;
   padding-bottom: 4px;
   border-bottom: solid #000000;
+  text-align: center;
 }
