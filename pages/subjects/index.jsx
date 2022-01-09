@@ -1,6 +1,7 @@
 //@ts-check
 import Head from "next/head"
 import Header from "../../components/Header"
+import index from "../../styles/index.module.css"
 
 export default function Subjects() {
   return (
