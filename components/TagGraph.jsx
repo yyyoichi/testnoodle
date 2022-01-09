@@ -33,9 +33,20 @@ export default function TagGraph ({subject}) {
         data: scores,
         backgroundColor: bgColors.slice(0, l),
         borderColor: bdColors.slice(0, l),
-        borderWidth: 1,
+        borderWidth: 2,
       },
     ]
   }
-  return <Pie data={data}/>
+  const options = {
+    maintainAspectRatio: false,
+ }; 
+
+  return (
+    <Pie
+      data={data}
+      options={options}
+      width={180}
+      height={180}  
+    />
+  );
 }
