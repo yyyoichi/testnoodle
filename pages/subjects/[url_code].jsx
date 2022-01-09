@@ -6,10 +6,11 @@ import data from "../../database/data"
 import mapSubject from "../../database/mapSubject"
 import header from "../../components/Header.jsx"
 import headercss from "../../styles/Header.module.css"
+import TagGraph from '../../components/TagGraph'
 
 export default function Subject(props) {
   const subject = mapSubject(props["data"]);//中身はdatabase/mapSubject.ts
-  const syllabusUrl = "https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" +subject["url_code"];
+  const syllabusUrl = "https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" + subject["url_code"];
 
   return (
     <div className={styles.container}>
@@ -30,7 +31,9 @@ export default function Subject(props) {
           <div className={show['analysis-container']}>
             <div className={show['learning']}>
               <p className={show['learning-title']}>何が学べる？</p>
-              <div className='learning-contents'></div>
+              <div className='learning-contents'>
+                <TagGraph subject={subject}/>
+              </div>
             </div>
           </div>
           <div className={show['analysis-container']}>
@@ -44,9 +47,9 @@ export default function Subject(props) {
               <p className={show['syllabus-title']}>シラバス情報</p>
               <div className={show['syllabus-contents']}>
                 <p>{subject["grade"]}</p>
-                <a href={"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" +subject['url_code'] } target="_blank" >{"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" +subject['url_code'] }</a>  
+                <a href={"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" + subject['url_code']} target="_blank" >{"https://www.wsl.waseda.jp/syllabus/JAA104.php?pKey=" + subject['url_code']}</a>
               </div>
-              <br/>
+              <br />
             </div>
           </div>
           <div className={show['other-classes']}>
