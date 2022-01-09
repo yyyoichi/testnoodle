@@ -11,11 +11,8 @@ export interface Subject {
   open: boolean,
   grade: string,
   tag: {
-    tags: string[]
-    score: {
-      other: number,
-      tags: number[]
-    }
+    labels: string[]
+    scores: number[]
   },
   star: number[],
   keywords: Array<String>
@@ -27,11 +24,11 @@ export interface Subject {
  * @returns Subject 成型したデータ
  */
 const mapSubject = (data: any): Subject => {
-  const othertagScore = data["ks"]["o"]
   const tagScore: number[] = data["ks"]["d"]
   const tagLength = tagScore.length
-  const tags: string[] = data["kw"].splice(0, tagLength)
-  console.log(data)
+  const tagKw = data["kw"].slice(0, tagLength)
+  const labels: string[] = [...tagKw, 'その他']
+  const scores: number[] = [...tagScore, data["ks"]["o"]]
   let subject: Subject = {
     id: data["_id"] || "id",
     name: data["n"],//科目名
@@ -45,11 +42,7 @@ const mapSubject = (data: any): Subject => {
     open: data["o"],//true or false
     grade: data["g"],
     tag: {
-      tags: tags,//配列["tagname1", "tagname2"…]//要素数は1~5コ
-      score: {
-        tags: tagScore,//上のtagsに対応する数の要素数。tagの強さ
-        other: othertagScore,//上以外のtagの強さ合計(その他)
-      }
+      labels, scores
     },
     star: data["st"],
     keywords: data["kw"]///とりあえず使うことはない
